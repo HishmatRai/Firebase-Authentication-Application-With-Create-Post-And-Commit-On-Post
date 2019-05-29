@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <!-- ---------------------------Sweet alert--------------------------- -->
+  <link rel="stylesheet" href="./../css/home.css" type="text/css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!-- ---------------------------Firebase database--------------------------- -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAmP-TFI9DgaHHYdnDELT2-ke7xZwd8HiI",
+        authDomain: "fir-application-d119c.firebaseapp.com",
+        databaseURL: "https://fir-application-d119c.firebaseio.com",
+        projectId: "fir-application-d119c",
+        storageBucket: "fir-application-d119c.appspot.com",
+        messagingSenderId: "613906334312",
+        appId: "1:613906334312:web:e26ab8ee75e3382e"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+        <!-- ---------------------------Firebase Authentication--------------------------- -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/jpg" href="https://img.icons8.com/color/48/000000/user.png">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:20%">
+              <h3 class="w3-bar-item"><b>Current User</b> </h3>
+  <center>
+      <p >
+          <img src="https://img.icons8.com/color/48/000000/user.png" width="50px" id="profile"><br>
+          <span><b id="userName"></b></span>
+        </p>
+        <p>
+            <img src="https://img.icons8.com/color/48/000000/secured-letter.png"><br>
+            <span><b id="userEmail"></b></span>
+        </p>
+        <p>
+                <img src="https://img.icons8.com/ios/50/000000/user-group-man-man-filled.png"><br>
+                <span><b id="mobNum"></b></span>
+        </p>
+        <p onclick="logout()">
+                <a href="#" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-log-out"></span> Log out
+                      </a>
+        </p>
+    </center>
+</div>
+
+<!-- Page Content -->
+
+<div style="margin-left:20%;margin-right:20%">
+
+<div class="w3-container w3-teal"  id="centerDiv">
+    <center>
+        
+        <h2 id="header">All Post</h2>
+    </center>
+  
+</div>
+<div id="createPost"> 
+          <!-- Comments Form -->
+          <div class="card my-4">
+                <h5 class="card-header" id="card-header">Create Post</h5>
+                <p>
+                        <img src="https://img.icons8.com/color/48/000000/user.png" width="50px"><br>
+                        <span><b id="postCreater"></b></span>
+                      </p>
+                <div class="card-body">
+                  <form>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="5" id="textArea" ></textarea>
+                    </div>
+                    <input id="submitBtn" type="button" value="Submit" onclick="postBtn()">
+                  </form>
+                </div>
+              </div>
+      
+    </div>
+
+
+<div class="w3-container" id="showData">
+   
+
+     
+        <h2 id="down"> Hishamt</h2>
+        <center>
+
+            <div id="loading">
+                <img src="./../images/1_W8cj-FRc58UozzcMWqVPZw.gif" alt="">
+            </div>
+        </center>
+        
+
+          <ul id="ul">
+            
+          </ul>
+        
+   
+</div>
+
+</div>
+<h1 style="width:60%;margin-left: 20% ;text-align: center;background-color: #5bc0de;font-weight: bold;color: white;font-size: 20px;font-family: cursive;padding-top: 1%;padding-bottom: 1%">Designed By Hishmat Rai Saylani Thar Student B-1</h1>
+</body>
+<script src="./../js/home.js"></script>
+
+</html>

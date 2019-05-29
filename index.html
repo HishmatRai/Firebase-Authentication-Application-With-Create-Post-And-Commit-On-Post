@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/jpg" href="https://img.icons8.com/color/48/000000/user.png">
+    <title>Index</title>
+    		<!-- ---------------------------Firebase database--------------------------- -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAmP-TFI9DgaHHYdnDELT2-ke7xZwd8HiI",
+    authDomain: "fir-application-d119c.firebaseapp.com",
+    databaseURL: "https://fir-application-d119c.firebaseio.com",
+    projectId: "fir-application-d119c",
+    storageBucket: "fir-application-d119c.appspot.com",
+    messagingSenderId: "613906334312",
+    appId: "1:613906334312:web:e26ab8ee75e3382e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+		<!-- ---------------------------Firebase Authentication--------------------------- -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+<style>
+@media (max-width: 600px) {
+  #loader {
+    /* min-width: 768px; */
+    width: 300px;
+    margin: auto
+  } }
+</style>
+</head>
+<body>
+    <center>
+    <img src="./images/circle-loading-animation.gif" id="loader">
+</center>
+</body>
+
+<script src="./js/app.js"></script>
+</html>

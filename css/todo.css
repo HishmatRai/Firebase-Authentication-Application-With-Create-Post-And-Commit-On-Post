@@ -1,0 +1,81 @@
+#navBarColor{
+    background-color:#2c6c80}
+    body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+li{
+  list-style: none;
+  border: 1px dotted #2c6c80; 
+  border-bottom: none;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+#divForShowData{
+  margin-top: 50px;
+width: 90%;
+margin-left: 3%;
+}
+#btn{
+  background-color:#2c6c80;
+color: white;
+font-weight: bold;
+padding-bottom: 11px;
+padding-top: 12px;
+padding-right: 30px;
+padding-left: 30px;
+}
+#input{
+  width: 80%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  text-align: center;
+  font-weight: bold;
+}
+button{
+  background-color:#2c6c80;
+color: white;
+ font-weight: bold;
+/* margin-left: 2%;
+margin-bottom: 1% */ 
+}
+h1{
+  background-color:#2c6c80;
+color: white;
+font-weight: bold; 
+}

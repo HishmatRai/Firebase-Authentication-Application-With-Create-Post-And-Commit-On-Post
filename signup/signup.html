@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SignUp</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/jpg" href="https://img.icons8.com/color/48/000000/user.png">
+
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		<!-- ---------------------------Sweet alert--------------------------- -->
+	
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!-- ---------------------------Firebase database--------------------------- -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAmP-TFI9DgaHHYdnDELT2-ke7xZwd8HiI",
+    authDomain: "fir-application-d119c.firebaseapp.com",
+    databaseURL: "https://fir-application-d119c.firebaseio.com",
+    projectId: "fir-application-d119c",
+    storageBucket: "fir-application-d119c.appspot.com",
+    messagingSenderId: "613906334312",
+    appId: "1:613906334312:web:e26ab8ee75e3382e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+		<!-- ---------------------------Firebase Authentication--------------------------- -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="./../css/style.css">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('images/bg-registration-form-2.jpg');">
+			<div class="inner">
+				<form action="">
+					<h3>Sign Up</h3>
+					<div class="form-group">
+						<div class="form-wrapper">
+							<label for="">Full Name</label>
+							<input type="text" class="form-control" id="fulltName">
+						</div>
+						<div class="form-wrapper">
+							<label for="">Number</label>
+							<input type="number" class="form-control"  id="contactNum">
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<label for="">Email</label>
+						<input type="text" class="form-control" id="email">
+					</div>
+					<div class="form-wrapper">
+						<label for="">Password</label>
+						<input type="password" class="form-control" id="password">
+					</div>
+					<div id="showError"></div>
+	                  <input type="button" value="Sign Up" id="btn">
+				</form>
+			</div>
+		</div>
+		
+	</body>
+	<script src="./../js/signup.js"></script>
+</html>

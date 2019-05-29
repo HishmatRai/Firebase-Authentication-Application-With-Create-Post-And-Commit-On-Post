@@ -1,0 +1,248 @@
+#navBarColor{
+    background-color:#2c6c80;
+    }
+    li{
+  list-style: none;
+  border: 1px dotted #2c6c80; 
+  /* border-bottom: none; */
+  font-weight: bold;
+  font-size: 20px;
+}
+#divForShowData{
+  margin-top: 50px;
+width: 90%;
+margin-left: 3%;
+}
+h1{
+  background-color:#2c6c80;
+color: white;
+font-weight: bold; 
+}
+#userName{
+  font-size: 20px;
+  font-weight: bold
+
+}
+#hishmat{
+  float: right;
+  background-color: deeppink;
+  margin-left: 98%;
+}
+#profile{
+   border-radius: 100px;
+   display: inline;
+}   
+  #centerDiv{
+      position:fixed;
+      width: 60%;
+
+
+  }
+ #createPost{
+     /* float: right; */
+     margin-top: 0px;
+     position: fixed;
+     margin-left: 60%;
+     /* background-color: silver; */
+     width: 20%;
+     margin-top: 12%;
+     text-align: center
+ }
+ #showData{
+     border: 1px dotted black;
+ }
+    
+ #textArea{
+     /* width: 90%; */
+     resize: none;
+ }
+ #card-header{
+     border: 1px solid white;
+     background-color: #5bc0de;
+     padding-top: 5%;
+     padding-bottom: 5%;
+     border-radius: 5px;
+     color: white;
+     font-weight: bold;
+     font-size: 100%;
+
+ }
+ #submitBtn{
+     font-weight: bold;
+     color: white;
+     padding-left: 33%;
+     padding-right: 33%;
+     padding-top: 3%;
+     padding-bottom: 3%;
+     background-color: #5bc0de;
+     border-radius: 5px;
+     border: none;
+
+ }
+ #submitBtn:hover{
+  background-color: #52b3d1;
+
+ }
+ body{
+     background-color:#f1f1f1!important;
+ }
+ ul{
+  padding-left: 0px;
+  /* border: 1px solid black; */
+ }
+ li{
+     background-color: white;
+     padding-left: 20px; 
+     /* font-size: 100%!important; */
+ }
+
+ #down{
+     margin-bottom: 70px;
+ }
+ #likeBtn{
+     background-color: #5bc0de;
+     margin-left: 20px;
+     border-radius: 5px;
+     border: none;
+     color: white;
+ }
+ .commentBtn{
+     background-color: #5bc0de;
+     margin-left: 8px;
+     border-radius: 5px;
+     border: none;
+     color: white;
+
+ }
+ .sentComment{
+     background-color: #5bc0de;
+     margin-left: 5px;
+     margin-bottom: 5px;
+     border-radius: 5px;
+     margin-top: 0px;
+     border: none;
+     color: white;
+     
+
+ }
+
+ #likeBtn:hover{
+  background-color: #52b3d1;
+
+ }
+ .sentComment:hover{
+  background-color: #52b3d1;
+
+ }
+ .commentBtn:hover{
+  background-color: #52b3d1;
+
+ }
+ #writeComment{
+ width: 90%;
+ border-radius: 5px;
+ /* border: none; */
+ margin-bottom: 10px;
+ border: 1px solid black;
+ padding-left: 5px;
+ resize: none;
+ 
+
+ }
+ #centerDiv{
+  background-color: #5bc0de!important;
+
+ }
+ h3{
+     color: #1916c4;
+     font-weight: bold;
+ }
+ .w3-bar-item{
+     margin-top: 63%;
+     text-align: center;
+     background-color: #5bc0de;
+     color: white;
+     border-radius: 5px;
+     font-weight: bold;
+     text-align: center!important;
+
+ }
+ #header{
+     font-weight: bold;
+     padding-bottom: 2%;
+
+ }
+.commentLi{
+    margin-bottom: 2%;
+    border:  1px solid rgb(82, 78, 78)!important;
+    margin-right: 3%;
+    border-radius: 5px;
+    width: 90%;
+}
+#commentProfile{
+    color: #1916c4;
+    margin-right: 5%;
+}
+#commentProfileImg{
+   border: 1px solid black!important;
+   border-radius: 100px;
+   width: 30px;
+   margin-right: 2%;
+}
+
+#editBtn{
+    float: right;
+    width: 3%;
+    margin-top: 0px;
+}
+#deleteBTn{
+    float: right;
+    width: 4%;
+    margin-top: 0px;
+}
+.postupdateBtn{
+    
+        background-color: #5bc0de;
+        margin-left: 8px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        margin-top: 1%;
+        font-weight: bold
+    
+}
+
+.postupdateBtn:hover{
+    background-color: #52b3d1;
+  
+   }
+   
+   .commentEdit{
+    width: 90%;
+    border-radius: 5px;
+    /* border: none; */
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding-left: 5px;
+    resize: none;
+    color: black;
+    font-size: 15px;
+   }
+   #comemntUpdateBtn{
+    background-color: #5bc0de;
+    margin-left: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-bottom: 1%;
+    font-weight: bold
+   }
+   #comemntUpdateBtn:hover{
+    background-color: #52b3d1;
+  
+   }
+   
+   #cmtH5{
+       color: black;
+       font-size: 17px;
+   }
