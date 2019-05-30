@@ -54,17 +54,16 @@ dataBase.child("Post").on(`child_added`,(snap)=>{
     editBtn.setAttribute("id", "editBtn");
     h3.appendChild(editBtn);
 
-
+   
 
     deleteBTn.addEventListener("click", ()=>{
       dataBase.child("Post/"+data.id).remove();
     cretaLi.remove();
     })
+
     
     
     editBtn.addEventListener("click", ()=>{
-      alert("edit");
-      // data.removeItem()
       let textAreaEdit = document.createElement("textArea");
       textAreaEdit.setAttribute("class", "form-control");
       textAreaEdit.setAttribute("rows", 5);
@@ -73,18 +72,32 @@ dataBase.child("Post").on(`child_added`,(snap)=>{
       textAreaEdit.innerHTML = data.textArea;
     textAreaEdit.setAttribute('placeholder',"What's on your mind ,"+userData.fulltName+"?")
     h3.appendChild(textAreaEdit);
-    let postUpdateBtn = document.createElement("input");
+    var postUpdateBtn = document.createElement("input");
     postUpdateBtn.setAttribute("type", "button");
     postUpdateBtn.setAttribute("value", "Update");
     postUpdateBtn.setAttribute("class","postupdateBtn");
     h3.appendChild(postUpdateBtn);
     p.setAttribute("style", "display:none")
     h5.setAttribute("style", "display:none")
-    // let showDataInH1 = document.getElementById("showDataInH1")
+ 
+
     
+    postUpdateBtn.addEventListener("click", ()=>{
+
+      console.log(textAreaEdit.value)
+      dataBase.child("Post/"+data.id ).update({
+        textArea:textAreaEdit.value,
+        
+      })
+      textAreaEdit.setAttribute("style", "display:none");
+      h5.setAttribute("style", "display:block");
+      p.setAttribute("style", "display:block");
+      postUpdateBtn.setAttribute("style", "display:none")
+    })
     
     })
     
+
     
     }
     let br = document.createElement("br");
@@ -171,7 +184,7 @@ if (flagchek=== true){
           
           // ******************************************** delete comment button *********************************
           deleteCommentBTn.addEventListener("click", ()=>{
-            dataBase.child("Post/"+sentComment.id+"/comment").remove();
+            dataBase.child("Post/"+sentComment.id+"/comment/"+comment.id).remove();
             comemntUl.remove();
             
           })
@@ -189,7 +202,13 @@ if (flagchek=== true){
             commentUpdateBtn.setAttribute("type", "button");
             commentUpdateBtn.setAttribute("id", "comemntUpdateBtn");
             commentUpdateBtn.setAttribute("value", "Update");
-          commentLi.appendChild(commentUpdateBtn)
+            commentLi.appendChild(commentUpdateBtn);
+
+
+
+          commentUpdateBtn.addEventListener("click", ()=>{
+            alert("Comment update not working")
+          })
 
           })
     
